@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        textarea {
+            resize: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>Купите Crocs!</h1>
+    <form action="" method="GET">
+        Ваше имя: <input type="text" name="user" value="Александра">
+        <br>
+        Ваш город: 
+        <select name="city">
+            <option>Москва</option>
+            <option>СПб</option>
+            <option>Петропавловск</option>
+            <option selected>Барнаул</option>
+        </select>
+        <br>
+        Ваша почта: <input type="text" name="email">
+        <br>
+        Ваш телефон: <input type="text" name="phone">
+        <br>
+        <input type="submit" value="Купить обувку">
+        <fieldset>
+            <legend>Выберите цвет</legend>
+            <input type="radio" name="color" value="Зелёный"> Зелёный 
+            <br>
+            <input type="radio" name="color" value="Синий"> Синий 
+            <br>
+            <input type="radio" name="color" value="Розовый" checked> Розовый 
+            <br>
+            <input type="radio" name="color" value="Банановый"> Банановый 
+        </fieldset>
+        <fieldset>
+            <legend>Дополнительные опции</legend>
+            <input type="checkbox" name="opt" value="С кнопочками"> С кнопочками
+            <br>
+            <input type="checkbox" name="opt" value="Не дырявые"> Не дырявые
+            <br>
+            <input type="checkbox" name="opt" value="С цветочками"> С цветочками
+            <br>
+            <input type="checkbox" name="opt" value="Китайская" checked> Китайская подделка
+            <br>
+            <input type="checkbox" name="opt" value="Сапоги"> Сапоги
+        </fieldset>
+        <textarea cols="30" rows="5" name="comments" placeholder="Ваш комментарий!"></textarea>
+    </form>
+</body>
+</html>
