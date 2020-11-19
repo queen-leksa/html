@@ -1,0 +1,33 @@
+.cards-container {
+    background: black;
+    padding: 50px 50px 0;
+    display: flex;
+    justify-content: space-between;
+    /*
+        flex-wrap - разбивает контейнер на несколько строчек, если они не влезают в одну
+        no-wrap (по умолчанию)
+        wrap
+        wrap-reverse
+    */
+    flex-wrap: wrap;
+    /*
+        align-content - выравнивание СТРОК вдоль поперечной оси
+        space-between, space-around, flex-start, flex-end, center, stretch  
+    */
+}
+.card {
+    width: calc(100% / 3 - 100px / 3);
+    border: 1px solid bisque;
+    padding: 20px;
+    color: bisque;
+    border-radius: 20px;
+    text-align: center;
+    box-sizing: border-box;
+    /* 
+        box-sizing - правило задает по какому принципу работает правила width и height
+
+        content-box (только по размерам контента)
+        border-box (контент + внутренний отступ + граница)
+    */
+    margin-bottom: 50px;
+}
